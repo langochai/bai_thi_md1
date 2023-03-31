@@ -6,6 +6,7 @@
 </head>
 <body>
 <canvas id="canvas1" width="600" height="600" style="border: 1px solid black"></canvas>
+<canvas id="canvas2" width="300" height="300" style="border: 1px solid blue"></canvas>
 <script>
     class Circle {
         x
@@ -30,8 +31,10 @@
         }
     }
 
-    let circle = new Circle(300, 300, 30, 'blue')
-    circle.render('canvas1')
+    let circle1 = new Circle(300, 300, 30, 'blue')
+    circle1.render('canvas1')
+    let circle2 = new Circle(30,30,30,'green')
+    circle2.render('canvas2')
 </script>
 </body>
 </html>
