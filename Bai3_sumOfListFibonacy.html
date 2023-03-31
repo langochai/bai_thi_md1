@@ -10,14 +10,15 @@
         let result = 1
         let a = 0   // 0 is the first number of fibonacci sequence
         let b = 1   // 1 is the second number of fibonacci sequence
-        for (let i = 0; i < x-2; i++) {
+        for (let i = 0; i < x - 2; i++) {
             let temp = b
             b = a + b
-            a= temp
+            a = temp
             result += b
         }
         return result
     }
+
     let x = 6
     console.log(sumOfListFibonacy(x))
 </script>
