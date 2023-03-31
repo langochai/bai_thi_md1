@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum of Fibonaci</title>
+</head>
+<body>
+<script>
+    function sumOfListFibonacy(x) {
+        let result = 1
+        let a = 0
+        let b = 1
+        for (let i = 0; i < x-2; i++) {
+            let temp = b
+            b = a + b
+            a= temp
+            result += b
+        }
+        console.log(result)
+    }
+    let x = 5
+    sumOfListFibonacy(x)
+</script>
+</body>
+</html>
